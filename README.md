@@ -7,7 +7,7 @@ The model is similar to the one proposed in https://arxiv.org/pdf/1703.04691.pdf
 
 - The idea is to use every time series we want to use in the forecasting, as a separate channel in the input, so that we use nCond channels, where nCond is the total number of inputs. In this way hopefully the time series will get combined in a sufficiently non-linear manner allowing to learn dependencies in between them. 
 
-- Each layer then computes nFilters (number of filters we use) convolution with each of the channels, and subsequently sums them and passes them through the non-linearity. 
+- Each layer then computes nFilters (number of filters we use) convolutions with each of the channels, and subsequently sums them and passes them through the non-linearity. 
 
 - After each layer we thus end up with a time series with nFilters channels. 
 
