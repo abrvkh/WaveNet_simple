@@ -15,4 +15,7 @@ The model is similar to the one proposed in https://arxiv.org/pdf/1703.04691.pdf
 
 - The time series used now is the Lorenz curve and a one-day-ahead sampling.
 
+The implementation uses Theano. 
+
 Disclaimer: This is a first trial version of this kind of implementation. The implementation needs to be carefully checked to make sure it avoids the look-ahead bias; furthermore, using the number of channels in this way could make it harder for the model to differentiate between which inputs are needed to improve the forecast and which are irrelevant, resulting in a larger error. 
+
